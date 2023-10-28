@@ -1,0 +1,5 @@
+# Ignore the __pycache__ folder and its contents
+__pycache__/
+
+# Ignore all files of type .pkl
+*.pkl
