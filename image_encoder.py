@@ -150,8 +150,8 @@ def image_encoder_main(filename):
     cmap1 = matplotlib.colors.LinearSegmentedColormap.from_list("", ["darkorange", "gray"])
     cmap2 = matplotlib.colors.LinearSegmentedColormap.from_list("", ["darkolivegreen", "gray"])
 
-    recursionlimit = sys.getrecursionlimit()
-    sys.setrecursionlimit(2000)
+    #recursionlimit = sys.getrecursionlimit()
+    #sys.setrecursionlimit(2000)
 
     # RGB to YCoCg
     imY, imCo, imCg = RGB_to_YCoCg(filename)
@@ -191,7 +191,7 @@ def image_encoder_main(filename):
     createPickleFile('A_imSCo', (HuffmanTree_Q_A_imSCo, HuffmanCoded_Q_A_imSCo, HuffmanMin_Q_A_imSCo, Q_min_A_imSCo, Q_SF_A_imSCo, Q_A_imSCo.shape, imSCo.shape))
     createPickleFile('A_imSCg', (HuffmanTree_Q_A_imSCg, HuffmanCoded_Q_A_imSCg, HuffmanMin_Q_A_imSCg, Q_min_A_imSCg, Q_SF_A_imSCg, Q_A_imSCg.shape, imSCg.shape))
 
-    sys.setrecursionlimit(recursionlimit)
+    #sys.setrecursionlimit(recursionlimit)
 
 
 
